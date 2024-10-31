@@ -1,0 +1,404 @@
+/*WE APPLY THE MOBILE FIRST APPROACH 
+All the below CSS styles are applied to small devices
+On small devices: hide the horizontal navbar
+*/
+
+
+/*Remove all default CSS styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*add font family for Sound Supply*/
+.georgia {
+    font-family: "Georgia";
+}
+
+.cn {
+    font-family: "Courier New";
+    text-align: center;
+}
+
+/*-------------------------------------*/
+/*Define styles for navbar*/
+nav {
+    min-height: 7vh;
+    background-color: #0c0e1d; 
+}
+
+.horizontal-nav {
+    /*Centralize this navbar*/
+    display: none; /*Hide this navbar on small devices*/
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none; /*Remove all default styles*/
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+
+    /*Centralize this navbar*/
+    display: inline-block;
+}
+
+nav ul li {
+    display: inline-block; /*Items are displayed on the same row*/
+    font-size: 18px;
+
+    /*Set position property to relative */
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none; /*Remove all default styles*/
+    padding: 14px 16px;
+}
+
+.active {
+    background-color: grey;
+}
+
+/*Add hover over effect on the li*/
+nav ul li a:hover:not(.active) {
+    background-color: black;
+}
+
+/*Define styles for the dropdown submenu*/
+.dropdown {
+    background-color: gray;
+    visibility: hidden; /* When openning the webpage, hide this dropdown*/
+    opacity: 0;
+
+    position: absolute;
+    transition: all 1s ease; /*Add animation transition to this dropdown menu*/
+    left: 0;
+    display: none;/*Not show this section yet*/
+}
+
+/*When users hover over the item, show the dropdown menu*/
+nav ul li:hover > ul {
+    visibility: visible; /*show this dropdown menu*/
+    display: block;
+    opacity: 1;
+}
+
+.dropdown li {
+    width: 100%;
+}
+
+
+/*Define style for the sandwich icon*/
+.sandwich-icon-area {
+    font-size: 2.2em; /*1em=16px => 32px = 2em*/
+    float: middle;
+    cursor: pointer;
+    color: white;
+}
+
+/*Define styles for the curtain menu layer*/
+.overlay {
+    height: 100%;
+    width: 33%;
+    display: none; /*block: show; none: hide*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0, 0.9);
+    z-index: 1; /*make this layer sit on top of other layer*/
+}
+
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none; /*remove all default styles*/
+    font-size: 2.0em;/*1em=16px => 2em = 32px*/
+    color: white;
+    display: block;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 32px;
+}
+
+.close-icon {
+    position: absolute;
+    top: 1.0em;
+    right: 1.5em; /*24px */
+    font-size: 4.0em;
+    color: white;
+}
+
+/*add hover effec to the hyperlinks */
+.overlay a:hover, .overlay a:focus {
+    color: grey;
+}
+
+
+/*------------------------------------*/
+header {
+    height: 15vh;
+    background-image: url("Images/musicbanner.jpg");
+    background-size: 50vw 15vh;
+
+    /*centralize the text*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 4vw; /* scales the font size with viewport width */
+    color: whitesmoke;
+    font-style: italic;
+    text-shadow: 0 0 40px #fff, 0 0 70px #fff, 0 0 100px;
+}
+
+
+
+/*------------------------------------*/
+/*defining for main*/
+main {
+    min-height: 68vh;
+    background-color: grey;
+    text-align: center;
+    font-size: 18px;
+
+
+    /*font colour to white*/
+    color: whitesmoke;
+}
+
+
+
+#movieList {
+    display: flex;
+    flex-direction: column;
+}
+
+.image-center {
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 16 / 9; /*prevents distortion when resized */
+    object-fit: cover; /*ensures the image fits nicely within its container */
+}
+
+.movie-card {
+    width: 100%;
+    max-width: 400px; /*set a max width so it doesn't stretch too wide */
+    margin: auto; /*center the movie card */
+}
+
+.movie-card h4, .movie-card p {
+    padding: 1rem; /*scales proportionally*/
+    margin-top: 5px;
+    text-align: center;
+    letter-spacing: 1.1px;
+    line-height: 1.2;
+}
+
+main p {
+    padding: 10px;
+    mark {
+        background-color: rgba(95, 95, 95, 0.5);
+        color: whitesmoke;
+      }
+
+}
+
+#genrebutton {
+	margin-top: center;
+    margin-left: center;
+    width: 250px;
+    height: 150px;
+    margin: 50px;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 2em;
+    cursor: pointer;
+    border: 5px solid darkslateblue;
+}
+
+/*-----------------------------------*/
+/*defining footer*/
+footer {
+    height: 10vh;
+    background-color: #0c0e1d;
+    position: relative;
+
+
+    /*centralize footer text*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer p {
+    font-size: 22px;/*default font-size is 16px */
+    font-weight: bold;
+    text-align: center;
+    color: whitesmoke;
+    font: Georgia;
+}
+
+.genre-page main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /*flexible grid*/
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+/*GENRE PAGE CSS*/
+
+.genretext {
+    font-size: 32px;
+    border: 2px solid darkslateblue; /*grey border */
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: 20px; 
+    padding: 10px 15px;
+    color: whitesmoke;
+    border-bottom: darkblue; /*makes the top and bottom look transparent and makes the borders look cool*/
+    border-top: darkblue; /*im so cool for implementing this*/
+}
+
+/*CONTACT PAGE CSS/*
+/*contact page css from w3schools*/
+/*styling inputs with type="text" and stuff*/
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ccc; /*grey border */
+    border-radius: 10px;
+    box-sizing: border-box; /*make sure that padding and width stays in place */
+    margin-top: 20px;
+    margin-bottom: 20px; 
+    resize: vertical /*allow the user to vertically resize the textarea */
+  }
+
+  /*style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: darkslateblue;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  /* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #0c0e1d; 
+  }
+
+
+
+/*for small to medium devices*/
+@media screen and (max-width: 768px) {
+    main {
+        background-image: url('MEDIA/background.gif'); /*still keeping background gif*/
+        background-color: transparent; 
+        background-size: cover; 
+        background-position: center;
+    }
+
+    .genre-page main {
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); /* automatically adjust based on space */
+    }
+
+    .movie-card {
+        width: 90%; /*make sure movie cards take most of the width */
+        margin: 10px auto; /*center them with a margin */
+    }
+
+    .video-container {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+
+/*for big devices */
+@media screen and (min-width: 769px) {
+    /* Horizontal navbar styles */
+    .horizontal-nav {
+        display: flex;
+    }
+    
+    .sandwich-icon-area {
+        float: left;
+        margin-left: 5px;
+    }
+
+    body {
+        position: relative;
+        margin: 0;
+    }
+
+    main {
+        min-height: 68vh;
+        background-color: grey;
+        text-align: center;
+        color: whitesmoke;
+        background-image: url('MEDIA/background.gif');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    .button-container {
+        display: flex;             /* use flexbox to arrange buttons */
+        justify-content: center;   /* center the buttons horizontally */
+        gap: 10px;                /*optional add space between buttons */
+        margin-top: 20px;         /*optional space above the button container */
+    }
+
+    .genre-page main {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); /*up to 3 flexible columns*/
+        margin: 0 auto; /*center the grid */
+        grid-gap: 20px; /*space between grid items */
+        padding: 20px;
+    }
+
+    .video-container {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        width: 100%; 
+        max-width: 100%;
+        aspect-ratio: 16 / 9; /*maintaining the aspect ratio*/
+    }
+
+    h4 {
+        font-size: 24px; /*this scales with the width */
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .genre-page iframe {
+        width: 100%;
+        max-width: 100%;
+        aspect-ratio: 16 / 9;
+    }
+
+    .genre-container {
+        display: flex; 
+        flex-direction: column;     
+        align-items: auto;     
+        margin: 20px 0;            
+    }
+    
+
+}

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<!------------------------------HEAD------------------------------------------------>
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Sound Supply</title> 
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    
+</head>
+
+<!------------------------------BODY------------------------------------------------>
+<body class="genre-page"> <!--genre page makes it so it only effects my genres not my home or about etc-->
+    <!--Navigation bar--> 
+    <nav>
+        <!--Add a sandwich icon here-->
+        <div class="sandwich-icon-area">
+            <p onclick="openNav()"> &#9776;</p>
+        </div>
+
+        <div class="horizontal-nav">
+            <ul>
+                <li><a class="active" href="index.html">HOME</a></li>
+                <li><a href="genres.html">GENRES</a>
+                    <ul class="dropdown">
+                        <li><a href="indie.html">INDIE</a></li>
+                        <li><a href="rock.html">ROCK</a></li>
+                        <li><a href="pop.html">POP</a></li>
+                        <li><a href="rap.html">RAP</a></li>
+                        <li><a href="electronic.html">ELECTRONIC</a></li>
+                        <li><a href="jazz.html">JAZZ</a></li>
+                        <li><a href="classical.html">CLASSICAL</a></li>
+                        <li><a href="country.html">COUNTRY</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact-us.html">CONTACT US</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--The curtain dropdown menu-->
+    <div id="myNav" class="overlay">
+        <p class="close-icon" onclick="closeNav()"> &times; </p>
+        <div class="overlay-content">
+            <a href="index.html">HOME</a>
+            <a href="genres.html">GENRES</a>
+            <a href="about.html">ABOUT</a>
+            <a href="contact-us.html">CONTACT US</a>
+        </div>
+    </div>
+
+    <script>
+        //Here is Javascript codes
+        //When users click on "sandwich icon", open or show the curtain menu layer
+        //Write the openNav() method here
+        function openNav() {
+            document.getElementById("myNav").style.display = "block";
+        }
+
+        //Write the closeNav() method here
+        function closeNav() {
+            document.getElementById("myNav").style.display = "none";
+        }
+
+    </script>
+
+    
+    <!--Header area--> 
+    <header> 
+        <h1 class="georgia">Rock</h1>     
+    </header>
+    
+    <!--main area--> 
+    <main class="genre-page">
+        
+
+        <!--1-->
+        <div class="video-container">
+            <h4 class="cn">"vanilla" xela fella - 3:59</h4>
+            <iframe width="560" height="315" src="https://www.youtube.com/watch?v=_psfShrwgjA&ab_channel=xelafella-Topic" 
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+
+        <!--2-->
+        <div class="video-container">
+            <h4 class="cn">"feminine adornments" julie - 4:13</h4>
+            <iframe width="560" height="315" src="https://www.youtube.com/watch?v=lutqJzGfQMA&ab_channel=julie" 
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+
+        <!--3-->
+        <div class="video-container">
+            <h4 class="cn">"snarky" quannnic - 4:05</h4>
+            <iframe width="560" height="315" src="https://www.youtube.com/watch?v=8pwGYLwTMhk&ab_channel=quannnic-Topic" 
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+
+
+        <!--4-->
+        <div class="video-container">
+            <h4 class="cn">"suicidal" Novulent - 2:34</h4>
+            <iframe width="560" height="315" src="https://www.youtube.com/watch?v=I5UgDbp2NXg&ab_channel=Novulent-Topic" 
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+
+
+        <!--5-->
+        <div class="video-container">
+            <h4 class="cn">"Realize" Trxy! - 1:55</h4>
+            <iframe width="560" height="315" src="https://www.youtube.com/watch?v=EkPmDy2xhVI&ab_channel=TrxyVEVO" 
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+
+
+        <!--6-->
+        <div class="video-container">
+            <h4 class="cn">"Decode" Paramore - 4:10</h4>
+            <iframe width="560" height="315" src="https://www.youtube.com/watch?v=G2nnIwCVB0s&ab_channel=Paramore-Topic" 
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+
+
+        <!--7-->
+        <div class="video-container">
+            <h4 class="cn">"wonder if you care" flyingfish - 2:14</h4>
+            <iframe width="560" height="315" src="https://www.youtube.com/watch?v=LDETsoKCT1c&ab_channel=flyingfish-Topic" 
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+
+
+        <!--8-->
+        <div class="video-container">
+            <h4 class="cn">"Ruin" Her New Knife - 3:47</h4>
+            <iframe width="560" height="315" src="https://www.youtube.com/watch?v=QME_rktZg1o&ab_channel=HerNewKnife-Topic" 
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+
+
+        <!--9-->
+        <div class="video-container">
+            <h4 class="cn">"Numb" Linkin Park - 3:07</h4>
+            <iframe width="560" height="315" src="https://www.youtube.com/watch?v=dxp9w9Ggehc&ab_channel=LinkinPark-Topic" 
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+
+        <div class="genre-container">
+            <h2 class="h4">
+                If you like this genre, you will probably like these:
+            </h2>
+            <div class="button-container">
+                <button id="genrebutton" onclick="window.location.href='pop.html'" class="georgia">Pop</button>
+                <button id="genrebutton" onclick="window.location.href='rap.html'" class="georgia">Rap</button>
+            </div>
+        </div>
+
+    </main>
+
+    
+
+    <!--Footer Area--> 
+    <footer> 
+        <div> 
+            <p>ITWD5.130 Website Development<br> School of Computing, EIT.</p> 
+            <p id="student-info"></p>
+        </div> 
+
+        <script>
+            //This way we embed JS codes directly inside html file
+            //Store data in variable through JS in html file
+            var fname = "James";
+            var year = 2024;
+            let school = "EIT School of computing";
+            const email = "symonj4@student.eit.ac.nz";
+            //Declare an object in JS
+            var person = {name: 'James',
+                            email: 'symonj4@eit.ac.nz',
+                            year: 2024
+                            };
+            //Declare an array of objects
+            let student = [{name: 'James Symon',
+                            email: 'symonj4@student.eit.ac.nz',
+                            year: 2024}];
+        
+        
+            //Display person on html element p with the id="student-info".
+            //1. First of all, find in the html document the element with the id="student-info"
+            //2. Update this element with the new data stored in the object "person"
+            document.getElementById("student-info").innerHTML = person.name + '<br>' + person.email
+                                                            + '<br>' + person.year;
+
+            //USE Loop to loop through all person in the array "student" and build the content 
+            let allStudentInfo = "";//Declare an empty variable
+            for(var i=0; i < student.length; i++) {
+                //Extract the person at the location [i] and append it to the variable allstudentinfo
+                allStudentInfo = allStudentInfo + student[i].name + '. Email: ' + student[i].email + '. Year: ' + student[i].year + '<br>';                          
+            }    
+            //Display the allStudentInfo on html        
+            document.getElementById('student-info').innerHTML = allStudentInfo;  
+            </script>
+    </footer>
+</body>
+</html>

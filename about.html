@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<!------------------------------HEAD------------------------------------------------>
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Sound Supply</title> 
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    
+</head>
+
+<!------------------------------BODY------------------------------------------------>
+<body>
+    <!--Navigation bar--> 
+    <nav>
+        <!--Add a sandwich icon here-->
+        <div class="sandwich-icon-area">
+            <p onclick="openNav()"> &#9776;</p>
+        </div>
+
+
+
+        <div class="horizontal-nav">
+            <ul>
+                <li><a class="active" href="index.html">HOME</a></li>
+                <li><a href="genres.html">GENRES</a>
+                    <ul class="dropdown">
+                        <li><a href="indie.html">INDIE</a></li>
+                        <li><a href="rock.html">ROCK</a></li>
+                        <li><a href="pop.html">POP</a></li>
+                        <li><a href="rap.html">RAP</a></li>
+                        <li><a href="electronic.html">ELECTRONIC</a></li>
+                        <li><a href="jazz.html">JAZZ</a></li>
+                        <li><a href="classical.html">CLASSICAL</a></li>
+                        <li><a href="country.html">COUNTRY</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact-us.html">CONTACT US</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!--curtain dropdown menu-->
+    <div id="myNav" class="overlay">
+        <p class="close-icon" onclick="closeNav()"> &times; </p>
+        <div class="overlay-content">
+            <a href="index.html">HOME</a>
+            <a href="genres.html">GENRES</a>
+            <a href="about.html">ABOUT</a>
+            <a href="contact-us.html">CONTACT US</a>
+        </div>
+    </div>
+
+    <script>
+        //here is Javascript codes
+        //when users click on "sandwich icon", open or show the curtain menu layer
+        function openNav() {
+            document.getElementById("myNav").style.display = "block";
+        }
+
+        //closeNav() method here
+        function closeNav() {
+            document.getElementById("myNav").style.display = "none";
+        }
+
+    </script>
+
+    
+    <!--header area--> 
+    <header> 
+        <h1>About</h1>     
+    </header>
+    
+    <!--main area--> 
+    <main>
+        <p class="cn"><mark>About Sound Supply<br><br>
+
+            Welcome to Sound Supply, a single location for finding music that suits your preferences. Sound Supply,<br> developed starting September 2024, enables you to compare and explore various genres,
+             making it simpler<br> than ever to discover the music you love.<br><br>
+            
+            By merely browsing and comparing genres, our platform aims to help music enthusiasts in exploring<br> further into their favourite sounds and discovering new favourites. Regardless of your musical <br>
+            preferences—classical, jazz, electronic, or rock—Sound Supply makes it easy and fun to explore<br> the wide world of music.</mark></p>
+
+        
+        <section>
+            <h4 id="slide-title">Indie</h4>
+            <img id="slide-image" src="MEDIA/movie0.jpg" height="400">
+        </section>
+
+        
+        <script>
+            //declare an array of images to create a slideshow
+            let topMovies = [{id: 0, title: "Indie / 'The Smiths'", year: 1994, img_url: "MEDIA/movie0.jpg"}, 
+                            {id: 1, title: "Rock / 'Metallica'", year: 1972, img_url: "MEDIA/movie1.jpg"}, 
+                            {id: 2, title: "Pop / 'Michael Jackson'", year: 2008, img_url: "MEDIA/movie2.jpg"}, 
+                            {id: 3, title: "Rap / 'Kanye West'", year: 1957, img_url: "MEDIA/movie3.jpg"}, 
+                            {id: 4, title: "EDM / 'Skrillex'", year: 1993, img_url: "MEDIA/movie4.jpg"}];
+
+            
+
+            //create a slideshow for topMovies
+            //create a function in Javascript
+            let slideshowIndex = 0;
+            function autoSlideshow() {
+                //check if slideshowIndex < the length of the array, if true -> increase the index by 1, else set slideshowIndex=0
+                if (slideshowIndex < topMovies.length - 1) {
+                    slideshowIndex++; //increment by 1
+                } else {
+                    slideshowIndex = 0;
+                }
+                //just update the title and image url accordingly
+                document.getElementById('slide-title').innerHTML = topMovies[slideshowIndex].title;
+                document.getElementById('slide-image').src = topMovies[slideshowIndex].img_url;
+                //wait for a while: 2 seconds
+                setTimeout(autoSlideshow, 2000);
+            }
+            //call to run or execute this autoslideshow() function
+            autoSlideshow();
+        </script>
+
+
+        <button id="genrebutton" onclick="window.location.href='contact-us.html'">Contact Us</button>
+
+
+
+    </main>
+
+    <!--footer area--> 
+    <footer> 
+        <div> 
+            <p>ITWD5.130 Website Development<br> School of Computing, EIT.</p> 
+            <p id="student-info"></p>
+        </div> 
+
+        <script>
+            //this way we embed JS codes directly inside html file
+            //store data in variable through JS in html file
+            var fname = "James";
+            var year = 2024;
+            let school = "EIT School of computing";
+            const email = "symonj4@student.eit.ac.nz";
+            //declare an object in JS
+            var person = {name: 'James',
+                            email: 'symonj4@eit.ac.nz',
+                            year: 2024
+                            };
+            //declare an array of objects
+            let student = [{name: 'James Symon',
+                            email: 'symonj4@student.eit.ac.nz',
+                            year: 2024}];
+        
+        
+            //display person on html element p with the id="student-info"
+            //1. first of all, find in the html document the element with the id="student-info"
+            //2. update this element with the new data stored in the object "person"
+            document.getElementById("student-info").innerHTML = person.name + '<br>' + person.email
+                                                            + '<br>' + person.year;
+
+            //use the loop to loop through all persons in the array "student" and build the content 
+            let allStudentInfo = "";//Declare an empty variable
+            for(var i=0; i < student.length; i++) {
+                //extract the person at the location [i] and append it to the variable allstudentinfo
+                allStudentInfo = allStudentInfo + student[i].name + '. Email: ' + student[i].email + '. Year: ' + student[i].year + '<br>';                          
+            }    
+            //display the allstudentinfo on html        
+            document.getElementById('student-info').innerHTML = allStudentInfo;  
+            </script>
+    </footer>
+</body>
+</html>

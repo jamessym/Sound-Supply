@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<!------------------------------HEAD------------------------------------------------>
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Genres</title> 
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<!------------------------------BODY------------------------------------------------>
+<body>
+    <!--Navigation bar--> 
+    <nav>
+        <!--Add a sandwich icon here-->
+        <div class="sandwich-icon-area">
+            <p onclick="openNav()"> &#9776;</p>
+        </div>
+
+        <div class="horizontal-nav">
+            <ul>
+                <li><a class="active" href="index.html">HOME</a></li>
+                <li><a href="genres.html">GENRES</a>
+                    <ul class="dropdown">
+                        <li><a href="indie.html">INDIE</a></li>
+                        <li><a href="rock.html">ROCK</a></li>
+                        <li><a href="pop.html">POP</a></li>
+                        <li><a href="rap.html">RAP</a></li>
+                        <li><a href="electronic.html">ELECTRONIC</a></li>
+                        <li><a href="jazz.html">JAZZ</a></li>
+                        <li><a href="classical.html">CLASSICAL</a></li>
+                        <li><a href="country.html">COUNTRY</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact-us.html">CONTACT US</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--The curtain dropdown menu-->
+    <div id="myNav" class="overlay">
+        <p class="close-icon" onclick="closeNav()"> &times; </p>
+        <div class="overlay-content">
+            <a href="index.html">HOME</a>
+            <a href="genres.html">GENRES</a>
+            <a href="about.html">ABOUT</a>
+            <a href="contact-us.html">CONTACT US</a>
+        </div>
+    </div>
+
+<script>
+    //Here is Javascript codes
+    //When users click on "sandwich icon", open or show the curtain menu layer
+    //Write the openNav() method here
+    function openNav() {
+        document.getElementById("myNav").style.display = "block";
+    }
+
+    //Write the closeNav() method here
+    function closeNav() {
+        document.getElementById("myNav").style.display = "none";
+    }
+
+</script>
+    
+    <!--Header area--> 
+    <header> 
+        <h1>GENRES</h1>     
+    </header>
+    
+    <!--main area--> 
+    <main class="cn">
+        <!--1--><br><br>
+        <a class="genretext" href="indie.html">Indie</a>
+        <!--2--><br><br><br>
+        <a class="genretext" href="rock.html">Rock</a>
+        <!--3--><br><br><br>
+        <a class="genretext" href="pop.html">Pop</a>
+        <!--4--><br><br><br>
+        <a class="genretext" href="rap.html">Rap</a>
+        <!--5--><br><br><br>
+        <a class="genretext" href="electronic.html">Electronic</a>
+        <!--6--><br><br><br>
+        <a class="genretext" href="jazz.html">Jazz</a>
+        <!--7--><br><br><br>
+        <a class="genretext" href="classical.html">Classical</a>
+        <!--8--><br><br><br>
+        <a class="genretext" href="country.html">Country</a>
+    </main>
+
+    <!--Footer Area--> 
+    <footer> 
+        <div> 
+            <p>ITWD5.130 Website Development<br> School of Computing, EIT.</p> 
+        </div> 
+    </footer>
+</body>
+</html>

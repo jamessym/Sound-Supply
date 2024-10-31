@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<!------------------------------HEAD------------------------------------------------>
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Sound Supply</title> 
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    
+</head>
+
+<!------------------------------BODY------------------------------------------------>
+<body class="genre-page"> <!--genre page makes it so it only effects my genres not my home or about etc-->
+    <!--Navigation bar--> 
+    <nav>
+        <!--Add a sandwich icon here-->
+        <div class="sandwich-icon-area">
+            <p onclick="openNav()"> &#9776;</p>
+        </div>
+
+        <div class="horizontal-nav">
+            <ul>
+                <li><a class="active" href="index.html">HOME</a></li>
+                <li><a href="genres.html">GENRES</a>
+                    <ul class="dropdown">
+                        <li><a href="indie.html">INDIE</a></li>
+                        <li><a href="rock.html">ROCK</a></li>
+                        <li><a href="pop.html">POP</a></li>
+                        <li><a href="rap.html">RAP</a></li>
+                        <li><a href="electronic.html">ELECTRONIC</a></li>
+                        <li><a href="jazz.html">JAZZ</a></li>
+                        <li><a href="classical.html">CLASSICAL</a></li>
+                        <li><a href="country.html">COUNTRY</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact-us.html">CONTACT US</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--The curtain dropdown menu-->
+    <div id="myNav" class="overlay">
+        <p class="close-icon" onclick="closeNav()"> &times; </p>
+        <div class="overlay-content">
+            <a href="index.html">HOME</a>
+            <a href="genres.html">GENRES</a>
+            <a href="about.html">ABOUT</a>
+            <a href="contact-us.html">CONTACT US</a>
+        </div>
+    </div>
+
+    <script>
+        //Here is Javascript codes
+        //When users click on "sandwich icon", open or show the curtain menu layer
+        //Write the openNav() method here
+        function openNav() {
+            document.getElementById("myNav").style.display = "block";
+        }
+
+        //Write the closeNav() method here
+        function closeNav() {
+            document.getElementById("myNav").style.display = "none";
+        }
+
+    </script>
+
+    
+    <!--Header area--> 
+    <header> 
+        <h1 class="georgia">Country</h1>     
+    </header>
+    
+    <!--main area--> 
+    <main class="genre-page">
+        
+
+        <!--1-->
+        <div class="video-container">
+            <h4 class="cn">"Pour Me A Drink" Post Malone - 3:15</h4>
+            <iframe width="560" height="315" src="https://www.youtube.com/watch?v=yWLVul4SREo&ab_channel=PostMalone-Topic" 
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+
+        <!--2-->
+        <div class="video-container">
+            <h4 class="cn">"Achy Breaky Heart" Billy Ray Cyrus - 3:24</h4>
+            <iframe width="560" height="315" src="https://www.youtube.com/watch?v=rU3PMOIX7xw&ab_channel=JoannaCountryPoland" 
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+
+        <!--3-->
+        <div class="video-container">
+            <h4 class="cn">"Live Like You Were Dying" Tim McGraw - 5:00</h4>
+            <iframe width="560" height="315" src="https://www.youtube.com/watch?v=YSc35IJaWl4&ab_channel=TimMcGraw-Topic" 
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+
+
+        <!--4-->
+        <div class="video-container">
+            <h4 class="cn">"Always On My Mind" Willie Nelson - 3:31</h4>
+            <iframe width="560" height="315" src="https://www.youtube.com/watch?v=9ULH8_CF0os&ab_channel=WillieNelsonVEVO" 
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+
+
+        <!--5-->
+        <div class="video-container">
+            <h4 class="cn">"I Walk the Line" Johnny Cash - 2:42</h4>
+            <iframe width="560" height="315" src="https://www.youtube.com/watch?v=J-6fW66IUY4&ab_channel=JohnnyCash-Topic" 
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+
+
+        <!--6-->
+        <div class="video-container">
+            <h4 class="cn">"Jolene" Dolly Parton - 2:43</h4>
+            <iframe width="560" height="315" src="https://www.youtube.com/watch?v=Ixrje2rXLMA&ab_channel=DollyPartonVEVO" 
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+
+
+        <!--7-->
+        <div class="video-container">
+            <h4 class="cn">"The Gambler" Kenny Rogers - 3:34</h4>
+            <iframe width="560" height="315" src="https://www.youtube.com/watch?v=w4RvskuFnPY&ab_channel=KennyRogers-Topic" 
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+
+
+        <!--8-->
+        <div class="video-container">
+            <h4 class="cn">"Wagon Wheel" Darius Rucker - 4:58</h4>
+            <iframe width="560" height="315" src="https://www.youtube.com/watch?v=rSH7wmGntfo&ab_channel=DariusRucker-Topic" 
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+
+
+        <!--9-->
+        <div class="video-container">
+            <h4 class="cn">"Stand By Your Man" Tammy Wynette - 2:39</h4>
+            <iframe width="560" height="315" src="https://www.youtube.com/watch?app=desktop&v=wXaAsbggsN0&ab_channel=TammyWynette-Topic" 
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+
+        <div class="genre-container">
+            <h2 class="h4">
+                If you like this genre, you will probably like these:
+            </h2>
+            <div class="button-container">
+                <button id="genrebutton" onclick="window.location.href='rock.html'" class="georgia">Rock</button>
+                <button id="genrebutton" onclick="window.location.href='pop.html'" class="georgia">Pop</button>
+            </div>
+        </div>
+
+    </main>
+
+    
+
+    <!--Footer Area--> 
+    <footer> 
+        <div> 
+            <p>ITWD5.130 Website Development<br> School of Computing, EIT.</p> 
+            <p id="student-info"></p>
+        </div> 
+
+        <script>
+            //This way we embed JS codes directly inside html file
+            //Store data in variable through JS in html file
+            var fname = "James";
+            var year = 2024;
+            let school = "EIT School of computing";
+            const email = "symonj4@student.eit.ac.nz";
+            //Declare an object in JS
+            var person = {name: 'James',
+                            email: 'symonj4@eit.ac.nz',
+                            year: 2024
+                            };
+            //Declare an array of objects
+            let student = [{name: 'James Symon',
+                            email: 'symonj4@student.eit.ac.nz',
+                            year: 2024}];
+        
+        
+            //Display person on html element p with the id="student-info".
+            //1. First of all, find in the html document the element with the id="student-info"
+            //2. Update this element with the new data stored in the object "person"
+            document.getElementById("student-info").innerHTML = person.name + '<br>' + person.email
+                                                            + '<br>' + person.year;
+
+            //USE Loop to loop through all person in the array "student" and build the content 
+            let allStudentInfo = "";//Declare an empty variable
+            for(var i=0; i < student.length; i++) {
+                //Extract the person at the location [i] and append it to the variable allstudentinfo
+                allStudentInfo = allStudentInfo + student[i].name + '. Email: ' + student[i].email + '. Year: ' + student[i].year + '<br>';                          
+            }    
+            //Display the allStudentInfo on html        
+            document.getElementById('student-info').innerHTML = allStudentInfo;  
+            </script>
+    </footer>
+</body>
+</html>

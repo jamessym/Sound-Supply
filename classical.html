@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<!------------------------------HEAD------------------------------------------------>
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Sound Supply</title> 
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    
+</head>
+
+<!------------------------------BODY------------------------------------------------>
+<body class="genre-page"> <!--genre page makes it so it only effects my genres not my home or about etc-->
+    <!--Navigation bar--> 
+    <nav>
+        <!--Add a sandwich icon here-->
+        <div class="sandwich-icon-area">
+            <p onclick="openNav()"> &#9776;</p>
+        </div>
+
+        <div class="horizontal-nav">
+            <ul>
+                <li><a class="active" href="index.html">HOME</a></li>
+                <li><a href="genres.html">GENRES</a>
+                    <ul class="dropdown">
+                        <li><a href="indie.html">INDIE</a></li>
+                        <li><a href="rock.html">ROCK</a></li>
+                        <li><a href="pop.html">POP</a></li>
+                        <li><a href="rap.html">RAP</a></li>
+                        <li><a href="electronic.html">ELECTRONIC</a></li>
+                        <li><a href="jazz.html">JAZZ</a></li>
+                        <li><a href="classical.html">CLASSICAL</a></li>
+                        <li><a href="country.html">COUNTRY</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact-us.html">CONTACT US</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--The curtain dropdown menu-->
+    <div id="myNav" class="overlay">
+        <p class="close-icon" onclick="closeNav()"> &times; </p>
+        <div class="overlay-content">
+            <a href="index.html">HOME</a>
+            <a href="genres.html">GENRES</a>
+            <a href="about.html">ABOUT</a>
+            <a href="contact-us.html">CONTACT US</a>
+        </div>
+    </div>
+
+    <script>
+        //Here is Javascript codes
+        //When users click on "sandwich icon", open or show the curtain menu layer
+        //Write the openNav() method here
+        function openNav() {
+            document.getElementById("myNav").style.display = "block";
+        }
+
+        //Write the closeNav() method here
+        function closeNav() {
+            document.getElementById("myNav").style.display = "none";
+        }
+
+    </script>
+
+    
+    <!--Header area--> 
+    <header> 
+        <h1 class="georgia">Classical</h1>     
+    </header>
+    
+    <!--main area--> 
+    <main class="genre-page">
+        
+
+        <!--1-->
+        <div class="video-container">
+            <h4 class="cn">"Clair de Lune" Debussy - 5:11</h4>
+            <iframe width="560" height="315" src="https://www.youtube.com/watch?v=JGJPVl7iQUM&ab_channel=JohannDebussy-Topic" 
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+
+        <!--2-->
+        <div class="video-container">
+            <h4 class="cn">"Reflections" Toshifumi Hinata - 2:10</h4>
+            <iframe width="560" height="315" src="https://www.youtube.com/watch?v=GpVEkOUj2ZQ&ab_channel=ToshifumiHinata-Topic" 
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+
+        <!--3-->
+        <div class="video-container">
+            <h4 class="cn">"Für Elise" Beethoven - 2:53</h4>
+            <iframe width="560" height="315" src="https://www.youtube.com/watch?v=_XG3h6LywNQ&ab_channel=LudwigvanBeethoven-Topic" 
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+
+
+        <!--4-->
+        <div class="video-container">
+            <h4 class="cn">"Eine Kleine Nachtmusik" Mozart - 5:15</h4>
+            <iframe width="560" height="315" src="https://www.youtube.com/watch?v=adIxEVkJefg&list=OLAK5uy_m4VsdRl4Yv4y63CU_ArM91jVaewHDk0Us&index=9&ab_channel=WolfgangAmadeusMozart-Topic" 
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+
+
+        <!--5-->
+        <div class="video-container">
+            <h4 class="cn">"Miles and Miles" Antoine Di Luzio - 2:35</h4>
+            <iframe width="560" height="315" src="https://www.youtube.com/watch?v=0ayEab9I8rc&ab_channel=AntoineDiLuzio-Topic" 
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+
+
+        <!--6-->
+        <div class="video-container">
+            <h4 class="cn">"Resta Con Me" Valentina Romano - 2:09</h4>
+            <iframe width="560" height="315" src="https://www.youtube.com/watch?v=rqSrSxi-FKA&ab_channel=ValentinaRomano-Topic" 
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+
+
+        <!--7-->
+        <div class="video-container">
+            <h4 class="cn">"L'autre Valse D'amélie" Schubert - 1:05</h4>
+            <iframe width="560" height="315" src="https://www.youtube.com/watch?v=lV9DePcyEpU&ab_channel=Fr%C3%A9d%C3%A9ricSchubert-Topic" 
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+
+
+        <!--8-->
+        <div class="video-container">
+            <h4 class="cn">"Escape" Kilgore Doubtfire - 4:40</h4>
+            <iframe width="560" height="315" src="https://www.youtube.com/watch?v=yebh32JSs9g&ab_channel=KurateMusic" 
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+
+
+        <!--9-->
+        <div class="video-container">
+            <h4 class="cn">"Ode to Vivian" Patrick Watson - 1:29</h4>
+            <iframe width="560" height="315" src="https://www.youtube.com/watch?v=fwhZulHsDYo&ab_channel=PatrickWatson-Topic" 
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+
+        <div class="genre-container">
+            <h2 class="h4">
+                If you like this genre, you will probably like these:
+            </h2>
+            <div class="button-container">
+                <button id="genrebutton" onclick="window.location.href='indie.html'" class="georgia">Indie</button>
+                <button id="genrebutton" onclick="window.location.href='jazz.html'" class="georgia">Jazz</button>
+            </div>
+        </div>
+
+    </main>
+
+    
+
+    <!--Footer Area--> 
+    <footer> 
+        <div> 
+            <p>ITWD5.130 Website Development<br> School of Computing, EIT.</p> 
+            <p id="student-info"></p>
+        </div> 
+
+        <script>
+            //This way we embed JS codes directly inside html file
+            //Store data in variable through JS in html file
+            var fname = "James";
+            var year = 2024;
+            let school = "EIT School of computing";
+            const email = "symonj4@student.eit.ac.nz";
+            //Declare an object in JS
+            var person = {name: 'James',
+                            email: 'symonj4@eit.ac.nz',
+                            year: 2024
+                            };
+            //Declare an array of objects
+            let student = [{name: 'James Symon',
+                            email: 'symonj4@student.eit.ac.nz',
+                            year: 2024}];
+        
+        
+            //Display person on html element p with the id="student-info".
+            //1. First of all, find in the html document the element with the id="student-info"
+            //2. Update this element with the new data stored in the object "person"
+            document.getElementById("student-info").innerHTML = person.name + '<br>' + person.email
+                                                            + '<br>' + person.year;
+
+            //USE Loop to loop through all person in the array "student" and build the content 
+            let allStudentInfo = "";//Declare an empty variable
+            for(var i=0; i < student.length; i++) {
+                //Extract the person at the location [i] and append it to the variable allstudentinfo
+                allStudentInfo = allStudentInfo + student[i].name + '. Email: ' + student[i].email + '. Year: ' + student[i].year + '<br>';                          
+            }    
+            //Display the allStudentInfo on html        
+            document.getElementById('student-info').innerHTML = allStudentInfo;  
+            </script>
+    </footer>
+</body>
+</html>
